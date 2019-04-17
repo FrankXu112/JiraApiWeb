@@ -46,6 +46,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -98,9 +101,6 @@
     <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
@@ -161,20 +161,22 @@
     <Compile Include="Models\Child_class_level3\NonEditableReason.cs" />
     <Compile Include="Models\Child_class_level3\OutwardIssue.cs" />
     <Compile Include="Models\Child_class_level3\StatusCategory.cs" />
+    <Compile Include="Models\Child_class_level3\TypeInIssueLink.cs" />
     <Compile Include="Models\Child_class_level3\Worklog2.cs" />
-    <Compile Include="Models\Child_class_level4\Attrs.cs" />
+    <Compile Include="Models\Child_class_level4\AttributesOfContent.cs" />
     <Compile Include="Models\Child_class_level4\Body.cs" />
     <Compile Include="Models\Child_class_level4\Comment3.cs" />
     <Compile Include="Models\Child_class_level4\Content2.cs" />
     <Compile Include="Models\Child_class_level4\UpdateAuthor.cs" />
-    <Compile Include="Models\Child_class_level5\Attrs2.cs" />
+    <Compile Include="Models\Child_class_level5\AttributesOfContent2.cs" />
     <Compile Include="Models\Child_class_level5\Content3.cs" />
     <Compile Include="Models\Child_class_level5\Content5.cs" />
     <Compile Include="Models\Child_class_level6\Content4.cs" />
     <Compile Include="Models\Child_class_level6\Content6.cs" />
-    <Compile Include="Models\Child_class_level7\Attrs3.cs" />
-    <Compile Include="Models\Main_class_jira\HistoryLog.cs" />
-    <Compile Include="Models\Main_class_jira\Jira.cs" />
+    <Compile Include="Models\Child_class_level7\AttributesOfContent4.cs" />
+    <Compile Include="Models\Main_class_jira\HistoryLogOfJiraTicket.cs" />
+    <Compile Include="Models\Main_class_jira\JiraTicket.cs" />
+    <Compile Include="Models\ReadJsonFiles.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

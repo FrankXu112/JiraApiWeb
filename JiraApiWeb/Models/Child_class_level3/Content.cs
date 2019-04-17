@@ -10,7 +10,7 @@ namespace JiraWebApi.Child_class_level3
 	class Content
 	{
 		public string type { get; set; }
-		public Attrs attrs { get; set; }
+		public AttributesOfContent attrs { get; set; }
 		public List<Content2> content { get; set; }
 
 	}

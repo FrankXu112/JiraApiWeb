@@ -10,6 +10,7 @@ namespace JiraWebApi
 {
 	class Fields
 	{
+		public object statuscategorychangedate { get; set; }
 		public Issuetype issuetype { get; set; }
 		public int timespent { get; set; }
 		public Project project { get; set; }
@@ -31,6 +32,7 @@ namespace JiraWebApi
 		public object customfield_10214 { get; set; }
 		public object customfield_10215 { get; set; }
 		public object customfield_10216 { get; set; }
+		public object customfield_10217 { get; set; }
 		public int aggregatetimeoriginalestimate { get; set; }
 		public int timeestimate { get; set; }
 		public List<object> versions { get; set; }
@@ -38,6 +40,7 @@ namespace JiraWebApi
 		public Assignee assignee { get; set; }
 		public DateTime updated { get; set; }
 		public Status status { get; set; }
+		public List<object> components { get; set; }
 		public int timeoriginalestimate { get; set; }
 		public Description description { get; set; }
 		public object customfield_10210 { get; set; }

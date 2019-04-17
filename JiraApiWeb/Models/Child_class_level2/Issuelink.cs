@@ -1,4 +1,5 @@
-﻿using JiraWebApi.Child_class_level3;
+﻿using JiraApiWeb.Models.Child_class_level3;
+using JiraWebApi.Child_class_level3;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,7 @@ namespace JiraWebApi.Child_class_level2
 	{
 		public string id { get; set; }
 		public string self { get; set; }
-		public Type type { get; set; }
+		public TypeInIssueLink type { get; set; }
 		public OutwardIssue outwardIssue { get; set; }
 
 	}

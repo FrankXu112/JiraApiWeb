@@ -11,7 +11,7 @@ namespace JiraWebApi.Child_class_level6
 	{
 		public string type { get; set; }
 		public string text { get; set; }
-		public Attrs3 attrs { get; set; }
+		public AttributesOfContent4 attrs { get; set; }
 
 	}
 }
