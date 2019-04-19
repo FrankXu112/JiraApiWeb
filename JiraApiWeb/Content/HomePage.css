@@ -1,0 +1,21 @@
+﻿body {
+}
+
+#jiraTitle{
+	font-style:italic;
+	font-size: 24px;
+}
+
+#outputBox{
+	width:800px;
+	height:1000px;
+	border:2px solid black;
+	margin-top:10px;
+}
+
+#apiRequestButton{
+	width:50px;
+	height:20px;
+	border:1px solid orange;
+	color:orange;
+}
