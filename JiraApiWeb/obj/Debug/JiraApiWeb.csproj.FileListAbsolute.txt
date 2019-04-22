@@ -78,3 +78,7 @@ C:\Users\frank xu\source\repos\JiraApiWeb\JiraApiWeb\bin\Microsoft.CodeDom.Provi
 C:\Users\frank xu\source\repos\JiraApiWeb\JiraApiWeb\obj\Debug\JiraApiWeb.csproj.CopyComplete
 C:\Users\frank xu\source\repos\JiraApiWeb\JiraApiWeb\obj\Debug\JiraApiWeb.dll
 C:\Users\frank xu\source\repos\JiraApiWeb\JiraApiWeb\obj\Debug\JiraApiWeb.pdb
+C:\Users\frank xu\Desktop\JiraApiWeb\JiraApiWeb\obj\Debug\JiraApiWeb.csprojAssemblyReference.cache
+C:\Users\frank xu\Desktop\JiraApiWeb\JiraApiWeb\obj\Debug\JiraApiWeb.csproj.CoreCompileInputs.cache
+C:\Users\frank xu\Desktop\JiraApiWeb\JiraApiWeb\obj\Debug\JiraApiWeb.dll
+C:\Users\frank xu\Desktop\JiraApiWeb\JiraApiWeb\obj\Debug\JiraApiWeb.pdb

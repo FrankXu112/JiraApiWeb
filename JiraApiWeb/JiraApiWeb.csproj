@@ -180,9 +180,11 @@
     <Compile Include="Models\Child_class_level6\Content4.cs" />
     <Compile Include="Models\Child_class_level6\Content6.cs" />
     <Compile Include="Models\Child_class_level7\AttributesOfContent4.cs" />
+    <Compile Include="Models\JiraApiHelper.cs" />
     <Compile Include="Models\Main_class_jira\HistoryLogOfJiraTicket.cs" />
     <Compile Include="Models\Main_class_jira\JiraTicket.cs" />
     <Compile Include="Models\ReadJsonFiles.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -190,6 +192,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\HomePage.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -197,7 +200,6 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
-    <Content Include="Scripts\JiraApiRequest.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
