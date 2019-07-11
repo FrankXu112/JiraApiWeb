@@ -102,18 +102,26 @@ namespace JiraApiWeb.Models
 
 		issues.ForEach(x => issueDataTable.Rows.Add(x.Key, x.Assignee, x.Reporter, x.Created, x.Closed, x.Status, x.Priority, x.Type, x.Sprint, x.Description, x.FixVersions, x.technicalValues, x.TimeTrackingData.OriginalEstimateInSeconds, x.TimeTrackingData.TimeSpent))
 
-		AddInParam2(paramColl, "@issues", SqlDbType.Structured, issueDataTable);
+		AddInParam(paramColl, "@issues", SqlDbType.Structured, issueDataTable);
 
 		await ExecuteNonQuery(connStr, "dbo.issues", paramColl);
 	}
 
-	Task ExecuteNonQuery(object connStr, string v, List<DbParameter> paramColl)
+	public async Task SaveIssueDetailsAsync(List<IssueDetail> issueDetails)
 	{
-		return Issue;
-	}
+		var paramColl = new List<DbParameter>();
+		DataTable issueDetailsDataTable = new DataTable();
 
-	void AddInParam2(List<DbParameter> paramColl, string v, SqlDbType structured, DataTable issueDataTable)
-	{
-		throw new NotImplementedException();
+		issueDetailsDataTable.Columns.Add("Users", typeof(List<User>));
+		issueDetailsDataTable.Columns.Add("Work_Time_Today", typeof(long));
+		issueDetailsDataTable.Columns.Add("Is_Reopned", typeof(Boolean));
+		issueDetailsDataTable.Columns.Add("Reopned_Times", typeof(long));
+		issueDetailsDataTable.Columns.Add("Last_User_closed", typeof(string));
+
+		issueDetails.ForEach(x => issueDetailsDataTable.Rows.Add(x.users, x.workTimetoday, x.isReopend, x.reopendTimes, x.lastUserClosed));
+
+		AddInParam(paramColl, "@issueDetails", SqlDbType.Structured, issueDetailsDataTable);
+
+		await ExecuteNonQuery(connStr, "dbo.issues", paramColl);
 	}
 }
