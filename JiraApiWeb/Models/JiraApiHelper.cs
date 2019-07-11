@@ -19,7 +19,6 @@ namespace JiraApiWeb.Models
 		public async Task<Issue> GetIssuseAsync()
 		{
 			var issue = await inner_client.RestClient.ExecuteRequestAsync<Issue>(Method.GET, $"/rest/api/3/issue/USG-979");
-
 			return issue;
 		}
 

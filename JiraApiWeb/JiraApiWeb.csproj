@@ -137,6 +137,9 @@
     </Compile>
     <Compile Include="Models\JiraApiHelper.cs" />
     <Compile Include="Models\JiraChangelog.cs" />
+    <Compile Include="Models\JiraController.cs" />
+    <Compile Include="Models\JiraDataCalculation.cs" />
+    <Compile Include="Models\JiraDBConnecter.cs" />
     <Compile Include="Models\ReadJsonFiles.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\JiraWorklog.cs" />
@@ -177,11 +180,11 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Jira\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
