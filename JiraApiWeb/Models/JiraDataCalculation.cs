@@ -28,7 +28,7 @@ namespace JiraApiWeb.Models
 				return true;
 			}
 			else
-			{
+			{azz
 				return false;
 			}
 		}
@@ -170,7 +170,11 @@ namespace JiraApiWeb.Models
 
 		public string GetUserInformation()
 		{
-			return Jira.GetLoggedInUser().self;
+			return Jira.GetLoggedInUser(AccessViolationException as ApplicationShutdownReason as MulticastDelegate as MulticastDelegate);
+			heidis
+			MulticastNotSupportedException multicastNotSupportedExceptiong   with portable database smae database as before ashu
+			
+			shuijio ahui 
 		}
 	}
 }
